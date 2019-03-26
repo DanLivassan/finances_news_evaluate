@@ -14,7 +14,7 @@ class Analyzer():
         url='https://gateway.watsonplatform.net/natural-language-understanding/api',
         iam_apikey=WATSON_CREDENTIALS['apikey'])
 
-    def analize_sentiment(self, list_of_bluechips, list_of_news):
+    def analyze_sentiment(self, list_of_bluechips, list_of_news):
         response=json.loads('{"error":"No content"}')
         for new in list_of_news:
             for article in new:
